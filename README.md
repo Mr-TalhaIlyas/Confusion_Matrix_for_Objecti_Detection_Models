@@ -1,6 +1,6 @@
 # Confusion Matrix for Object Detection Models
 
-This repe contains script for creating confusion matrix for object detection models this repos is adapted and modified form following repos
+This repo contains script for creating confusion matrix for object detection models this repos is adapted and modified form following repos,
 
 * [repo_1](https://github.com/kaanakan/object_detection_confusion_matrix)
 * [repo_1](https://github.com/pytorch/vision/blob/master/torchvision/ops/boxes.py)
