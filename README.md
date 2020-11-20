@@ -3,9 +3,9 @@
 This repo contains script for creating confusion matrix for object detection models this repos is adapted and modified form following repos,
 
 * [repo_1](https://github.com/kaanakan/object_detection_confusion_matrix)
-* [repo_1](https://github.com/pytorch/vision/blob/master/torchvision/ops/boxes.py)
-* [repo_1](https://github.com/whynotw/YOLO_metric)
-* [repo_1](https://www.tensorflow.org/tensorboard/image_summaries)
+* [repo_2](https://github.com/pytorch/vision/blob/master/torchvision/ops/boxes.py)
+* [repo_3](https://github.com/whynotw/YOLO_metric)
+* [repo_4](https://www.tensorflow.org/tensorboard/image_summaries)
 
 ## Dependencies
 Repo only require some basic libs. like,
@@ -16,7 +16,7 @@ Repo only require some basic libs. like,
 
 After you train you abject detection model and get the final ouputs after non-max-suppression(NMS), just convert all the predictions to format as in **sample_data** dir in repo.
 After saving the predictionsin their respective dir. in .txt format just run change the paths and run the script.
-The text files are in following format
+The text files are in following format, (In sample data I have 4 classes namely [ "blossom_end_rot", "graymold","powdery_mildew","spider_mite","spotting_disease"])
 #### GT
 ```
 spider_mite 133 512 203 598
