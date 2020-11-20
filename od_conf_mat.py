@@ -273,26 +273,6 @@ c_m = plot_confusion_matrix(cm, class_names, normalize = True, show_text = True,
 
 
 
-#%%
-y_true = []
-y_pred = []
-l1 = np.maximum(y_t.shape[0], y_p.shape[0])
-thresh = 0.5
-for i in range(y_p.shape[0]):
-    for j in range(y_t.shape[0]):
-        g = y_t[j, 1:]
-        p = y_p[i, 1:]
-        iou = IoU(g , p)
-        print(iou)
-        if iou >= thresh:
-            y_true.append(y_t[j,0])
-            y_pred.append(y_p[i,0])
-        if y_t.shape[0] < y_p.shape[0]:
-            y_true.append(20)
-            y_pred.append(y_p[i, 0])
-        
-        if y_p[i,0] == y_t[j,0]: 
-
 
 
 
