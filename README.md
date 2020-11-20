@@ -2,13 +2,13 @@
 
 This repe contains script for creating confusion matrix for object detection models this repos is adapted and modified form following repos
 
-# https://github.com/kaanakan/object_detection_confusion_matrix
-# https://github.com/pytorch/vision/blob/master/torchvision/ops/boxes.py
-# https://github.com/whynotw/YOLO_metric
-# https://www.tensorflow.org/tensorboard/image_summaries
+* [repo_1](https://github.com/kaanakan/object_detection_confusion_matrix)
+* [repo_1](https://github.com/pytorch/vision/blob/master/torchvision/ops/boxes.py)
+* [repo_1](https://github.com/whynotw/YOLO_metric)
+* [repo_1](https://www.tensorflow.org/tensorboard/image_summaries)
 
 ## Dependencies
-Repo only require some basic lib. like,
+Repo only require some basic libs. like,
 1. Numpy 
 2. Matplotlib
 
@@ -44,4 +44,4 @@ The first one is class name, second one is confidence score and following digits
 
 Confucion matrix for pascal_voc dataset, the ouput is from custom trained YOLO_v1 from scratch that's why the results are not so good.
 
-img.png
+![alt text](https://github.com/Mr-TalhaIlyas/Confusion_Matrix_for_Objecti_Detection_Models/blob/master/images/CM.png?raw=true)
