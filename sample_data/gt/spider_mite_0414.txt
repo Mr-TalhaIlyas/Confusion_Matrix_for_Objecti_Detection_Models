@@ -1,0 +1,3 @@
+spider_mite 334 426 355 465
+spider_mite 1 248 41 350
+spider_mite 320 88 375 366

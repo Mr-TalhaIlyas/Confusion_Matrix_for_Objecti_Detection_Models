@@ -1,0 +1,2 @@
+spotting_disease 110 410 168 502
+graymold 179 260 541 672

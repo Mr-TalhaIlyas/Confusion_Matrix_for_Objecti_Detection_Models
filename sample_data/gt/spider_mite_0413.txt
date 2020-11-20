@@ -1,0 +1,2 @@
+spider_mite 133 512 203 598
+spider_mite 216 186 336 386

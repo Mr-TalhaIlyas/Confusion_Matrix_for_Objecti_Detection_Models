@@ -1,0 +1,13 @@
+powdery_mildew 301 394 419 460
+powdery_mildew 59 339 123 401
+powdery_mildew 198 322 506 449
+powdery_mildew 14 392 55 437
+powdery_mildew 124 213 199 256
+powdery_mildew 79 396 147 466
+powdery_mildew 220 176 316 271
+powdery_mildew 140 180 171 206
+powdery_mildew 150 380 280 479
+powdery_mildew 180 165 229 227
+powdery_mildew 254 257 365 318
+powdery_mildew 38 42 342 157
+powdery_mildew 134 304 185 348

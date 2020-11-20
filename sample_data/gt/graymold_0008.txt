@@ -1,0 +1,2 @@
+graymold 209 494 506 735
+spider_mite 252 296 285 329

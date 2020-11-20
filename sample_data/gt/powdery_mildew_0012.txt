@@ -1,0 +1,4 @@
+powdery_mildew 292 161 418 422
+powdery_mildew 322 8 424 157
+powdery_mildew 161 150 272 321
+powdery_mildew 127 321 257 454
