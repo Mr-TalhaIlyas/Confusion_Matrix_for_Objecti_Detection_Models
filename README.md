@@ -39,7 +39,28 @@ The first one is class name, second one is confidence score and following digits
 * normalize = True -> to normalize the values between 0 and 1 in the plot
 * show_text = True -> to show text in confucion matrix blocks or not
 * show_fpfn = True -> whether to show FP/FN in the final matix
+## Usage
+```python
+class_names = ['aeroplane', 'bicycle', 'bird','boat','bottle', 'bus', 'car',
+                'cat', 'chair', 'cow','diningtable','dog', 'horse', 'motorbike',
+                'person','pottedplant','sheep', 'sofa', 'train', 'tvmonitor']
+#class_names = [ "blossom_end_rot", "graymold","powdery_mildew","spider_mite","spotting_disease"]
 
+gt = glob.glob(os.path.join('D:/cw_projects/conf_mat/gt/','*.txt'))
+pred = glob.glob(os.path.join('D:/cw_projects/conf_mat/pred/','*.txt'))
+conf_mat = ConfusionMatrix(num_classes = len(class_names), CONF_THRESHOLD = 0.3, IOU_THRESHOLD = 0.5)
+
+for i in range(len(gt)):
+    y_t = np.asarray(read_txt(gt[i], pred=False))
+    y_p = np.asarray(read_txt(pred[i], pred=True))
+    y_t = process(y_t, class_names)
+    y_p = process(y_p, class_names, gt = False)
+ 
+    conf_mat.process_batch(y_p, y_t) 
+    
+cm = conf_mat.matrix
+c_m = plot_confusion_matrix(cm, class_names, normalize = True, show_text = True, show_fpfn = True)
+```
 ## Sample Output
 
 Confucion matrix for pascal_voc dataset, the ouput is from custom trained YOLO_v1 from scratch that's why the results are not so good.
