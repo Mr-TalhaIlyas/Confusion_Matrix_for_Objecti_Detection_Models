@@ -259,12 +259,10 @@ for i in range(len(gt)):
     y_t = np.asarray(read_txt(gt[i], pred=False))
     y_p = np.asarray(read_txt(pred[i], pred=True))
     
-    y_t = process(y_t, class_names)
-    y_p = process(y_p, class_names, gt = False)
-    
-    
-    
-    conf_mat.process_batch(y_p, y_t) 
+    if y_p.size !=0:
+        y_t = process(y_t, class_names)
+        y_p = process(y_p, class_names, gt = False)
+        conf_mat.process_batch(y_p, y_t) 
     
 cm = conf_mat.matrix
 
