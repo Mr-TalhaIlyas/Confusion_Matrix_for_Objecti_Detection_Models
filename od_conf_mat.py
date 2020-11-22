@@ -102,7 +102,19 @@ class ConfusionMatrix:
             
 
 def plot_confusion_matrix(cm, class_names, normalize = True, show_text = True, show_fpfn = False):
-    
+    '''
+    Parameters
+    ----------
+    cm : a nxn dim numpy array.
+    class_names: a list of class names (str type)
+    normalize: whether to normalize the values
+    show_text: whether to show value in each block of the matrix, If matrix is large like 10x10 or 20x20 it's better to set it to false
+               because it'll be difficult to read values but you can see the network behaviour via color map.
+    show_fpfn: whether to show false positives on GT axis and false negatives on Pred axis. FN -> not detected & FP -> wrong detections
+    Returns
+    -------
+    fig: a plot of confusion matrix along with colorbar
+    '''
     if show_fpfn:
         conf_mat = cm
         x_labels = copy.deepcopy(class_names)
