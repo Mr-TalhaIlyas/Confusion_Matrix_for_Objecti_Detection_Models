@@ -14,7 +14,7 @@ mpl.rcParams['figure.dpi'] = 300
 # https://github.com/whynotw/YOLO_metric
 # https://www.tensorflow.org/tensorboard/image_summaries
 '''
-This code is adapted from abvoe links to plot a confusion matrix  for object detection
+This code is modified and adapted from abvoe links to plot a confusion matrix  for object detection
 model for details kinly visit them
 
 Kindly read README.md for details.
