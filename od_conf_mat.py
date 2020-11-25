@@ -99,7 +99,14 @@ class ConfusionMatrix:
             if all_matches.shape[0] and all_matches[all_matches[:, 1] == i].shape[0] == 0:
                 detection_class = detection_classes[i]
                 self.matrix[self.num_classes ,detection_class] += 1
-            
+                
+ # Loop over data dimensions and create text annotations.
+def clr_select(i, j):
+    if i==j:
+        color="green"
+    else:
+        color="red"
+    return color         
 
 def plot_confusion_matrix(cm, class_names, normalize = True, show_text = True, show_fpfn = False):
     '''
@@ -153,13 +160,6 @@ def plot_confusion_matrix(cm, class_names, normalize = True, show_text = True, s
     # Rotate the tick labels and set their alignment.
     plt.setp(ax.get_xticklabels(), rotation=45, ha="center", rotation_mode="anchor")#ha=right
     
-    # Loop over data dimensions and create text annotations.
-    def clr_select(i, j):
-        if i==j:
-            color="green"
-        else:
-            color="red"
-        return color
     if show_text:
         for i in range(len(x_labels)):
             for j in range(len(y_labels)):
