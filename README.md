@@ -1,3 +1,5 @@
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMr-TalhaIlyas%2FConfusion_Matrix_for_Objecti_Detection_Models&count_bg=%233DC8C7&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 # Confusion Matrix for Object Detection Models
 
 This repo contains script for creating confusion matrix for object detection models, provided  ```.txt``` files as shown in sample data dir. This repos is adapted and modified form following repos,
